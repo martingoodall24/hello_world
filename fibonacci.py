@@ -11,7 +11,7 @@ def last_8(some_int):
 
 
 def optimized_fibonacci(f):
-  out = []
+  out = #[]
   out.append(0) 
   out.append(1)
   for i in range(2,f+1):
