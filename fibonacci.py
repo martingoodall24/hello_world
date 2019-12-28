@@ -6,8 +6,8 @@ def last_8(some_int):
     :param int some_int: the number
     :rtype: int
     """
-    last_7 = some_int % 10000000
-    return last_7 
+    last_8_digits = some_int % 100000000
+    return last_8_digits 
 
     #raise NotImplementedError()
 
@@ -37,5 +37,5 @@ if __name__ == "__main__":
 
     print("f(100000)[-8:]", last_8(optimized_fibonacci(100000)))
 
-    new_seq = SummableSequence(5, 7, 11)
-    print("new_seq(100000)[-8:]:", last_8(new_seq(100000)))
+    #new_seq = SummableSequence(5, 7, 11)
+    #print("new_seq(100000)[-8:]:", last_8(new_seq(100000)))
