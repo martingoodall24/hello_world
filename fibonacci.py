@@ -6,8 +6,10 @@ def last_8(some_int):
     :param int some_int: the number
     :rtype: int
     """
+    last_7 = some_int % 10000000
+    return last_7 
 
-    raise NotImplementedError()
+    #raise NotImplementedError()
 
 
 def optimized_fibonacci(f):
