@@ -14,7 +14,7 @@ def last_8(some_int):
 
 def optimized_fibonacci(f):
   import pandas as pd
-  out = pd.DataFrame() #[]
+  out =  []
   out.append(0) 
   out.append(1)
   for i in range(2,f+1):
@@ -22,7 +22,7 @@ def optimized_fibonacci(f):
   
   #x = Decimal(out[100000])
   #'{:.2e}'.format(x)
-  return out
+  return out[f]
   #raise NotImplementedError()
 
 
