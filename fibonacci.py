@@ -13,7 +13,7 @@ def last_8(some_int):
 
 
 def optimized_fibonacci(f):
-  import pandas as pd
+  #import pandas as pd
   out =  []
   out.append(0) 
   out.append(1)
