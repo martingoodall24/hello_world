@@ -8,7 +8,7 @@ pytest = "*"
 pytest-cov = "*"
 
 [packages]
-pandas
+pandas = "*"
 
 [requires]
 python_version = "3.7"
