@@ -7,7 +7,7 @@ from unittest import TestCase, main
 
 #from fibonacci import SummableSequence, last_8, optimized_fibonacci
 from fibonacci import last_8, optimized_fibonacci
-from pyramid import print_pyramid
+#from pyramid import print_pyramid
 
 try:
     # Absent on Windows, trigger AttributeError
