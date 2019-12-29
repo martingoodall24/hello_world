@@ -24,7 +24,7 @@ def print_pyramid(rows):
     for i in seq:
         q= z.center(width-i,"=")
         q2 = '{s:{c}^{n}}'.format(s=q,n=width,c=b)
-        rows.append(q2)
+        output.append(q2)
     return output   
     #raise NotImplementedError("Called with rows={}".format(rows))
 
