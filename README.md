@@ -7,4 +7,4 @@ i blew a kiss into the wind closed my eyes and kicked the fear away.
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-https://travis-ci.com/martingoodall24/hello_world.svg?token=Q5So3kNGLTTvp1L6A9Rp&branch=master
+[![Build: passing](https://travis-ci.com/martingoodall24/hello_world.svg?token=Q5So3kNGLTTvp1L6A9Rp&branch=master)
