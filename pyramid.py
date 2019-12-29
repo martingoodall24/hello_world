@@ -32,6 +32,8 @@ def print_pyramid(rows):
     
     #raise NotImplementedError("Called with rows={}".format(rows))
 
+def test_meee():
+    print("testme")
 
 if __name__ == "__main__":
     parser = ArgumentParser(
