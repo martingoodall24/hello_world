@@ -28,6 +28,8 @@ def optimized_fibonacci(f):
 #     def __call__(self, i):
 #         raise NotImplementedError()
 
+def test_me():
+    print("inside test_me")
 
 if __name__ == "__main__":
 
