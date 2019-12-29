@@ -7,31 +7,27 @@ def last_8(some_int):
     :rtype: int
     """
     last_8_digits = some_int % 100000000
-    return last_8_digits 
-
+    return last_8_digits
     #raise NotImplementedError()
 
 
 def optimized_fibonacci(f):
-  #import pandas as pd
-  out =  []
-  out.append(0) 
-  out.append(1)
-  for i in range(2,f+1):
-      out.append(out[i-1] + out[i-2])
-  
-  #x = Decimal(out[100000])
-  #'{:.2e}'.format(x)
-  return out[f]
-  #raise NotImplementedError()
+    import pandas as pd
+    out = []
+    out.append(0) 
+    out.append(1)
+    for i in range(2,f+1):
+        out.append(out[i-1] + out[i-2])
+    return out[f]
+    #raise NotImplementedError()
 
 
-class SummableSequence(object):
-    def __init__(self, *initial):
-        raise NotImplementedError()
+# class SummableSequence(object):
+#     def __init__(self, *initial):
+#         raise NotImplementedError()
 
-    def __call__(self, i):
-        raise NotImplementedError()
+#     def __call__(self, i):
+#         raise NotImplementedError()
 
 
 if __name__ == "__main__":
