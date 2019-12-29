@@ -30,6 +30,8 @@ def optimized_fibonacci(f):
 
 def test_me():
     print("inside test_me")
+    print("testme2")
+    print("testme4")
 
 if __name__ == "__main__":
 
