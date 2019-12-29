@@ -17,7 +17,7 @@ def print_pyramid(rows):
     a = "="
     b = "-"
     z = ''
-    rows =  [] 
+    output =  [] 
     seq =  list(range(0,n*2,2))
     seq.sort(reverse=True)
     j = 0
@@ -25,7 +25,7 @@ def print_pyramid(rows):
         q= z.center(width-i,"=")
         q2 = '{s:{c}^{n}}'.format(s=q,n=width,c=b)
         rows.append(q2)
-     return rows   
+    return output   
     #raise NotImplementedError("Called with rows={}".format(rows))
 
 
