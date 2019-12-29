@@ -16,6 +16,7 @@ def print_pyramid(rows):
     width = n + (n-1)
     a = "="
     b = "-"
+    z = ''
     rows =  [] 
     seq =  list(range(0,n*2,2))
     seq.sort(reverse=True)
