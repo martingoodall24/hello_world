@@ -7,7 +7,7 @@ from unittest import TestCase, main
 
 #from fibonacci import SummableSequence, last_8, optimized_fibonacci
 from fibonacci import last_8, optimized_fibonacci
-#from pyramid import print_pyramid
+from pyramid import print_pyramid
 
 try:
     # Absent on Windows, trigger AttributeError
@@ -89,21 +89,21 @@ class MiscTests(TestCase):
         self.assertEqual(last_8(123456789), 23456789)
 
 
-#class PyramidTests(TestCase):
-#    def _assert_expected(self, rows, expected):
-#        with capture_print() as std:
-#            print_pyramid(rows)
+class PyramidTests(TestCase):
+    def _assert_expected(self, rows, expected):
+        with capture_print() as std:
+            print_pyramid(rows)
 
-#        std.seek(0)
-#        captured = std.read()
+        std.seek(0)
+        captured = std.read()
 
-#        self.assertEqual(captured, expected)
+        self.assertEqual(captured, expected)
 
-#    def test_pyramid_one(self):
-#        self._assert_expected(1, "=\n")
+    def test_pyramid_one(self):
+        self._assert_expected(1, "=\n")
 
-#    def test_pyramid_two(self):
-#        self._assert_expected(2, "-=-\n" + "===\n")
+    def test_pyramid_two(self):
+        self._assert_expected(2, "-=-\n" + "===\n")
 
 
 if __name__ == "__main__":
