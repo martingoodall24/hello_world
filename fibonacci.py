@@ -21,18 +21,19 @@ def optimized_fibonacci(f):
     #raise NotImplementedError()
 
 
-class SummableSequence():
-    def __init__(self, n1, n2, n3):
-        self.n1 = n1
-        self.n2 = n2
-        self.n3 = n3
+cclass SummableSequence(object):
+    def __init__(self, *initial):
+        self.initial = initial
+        #print(self.initial)
         #raise NotImplementedError()
 
     def __call__(self, i):
         out = []
-        out.append(self.n1) 
-        out.append(self.n2)
-        out.append(self.n3)
+        #print(self.initial)
+        for each in self.initial:
+            #print(each)
+            out.append(each)
+            print(out)
         for j in range(2,i+1):
             out.append(out[j-1] + out[j-2] + out[j-3])
         return out[j]
