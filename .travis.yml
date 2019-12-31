@@ -24,7 +24,7 @@ jobs:
         #- pytest --cov-report xml --cov-report term
       script: 
         - coverage run -m unittest discover
-        - pytest --cov-report html:cov_html  --cov=tests/
+        - pytest --cov-report html  --cov
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     - stage: answers
