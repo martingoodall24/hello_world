@@ -21,21 +21,26 @@ def optimized_fibonacci(f):
     #raise NotImplementedError()
 
 
-# class SummableSequence(object):
-#     def __init__(self, *initial):
-#         raise NotImplementedError()
+class SummableSequence():
+    def __init__(self, n1, n2, n3):
+        self.n1 = n1
+        self.n2 = n2
+        self.n3 = n3
+        #raise NotImplementedError()
 
-#     def __call__(self, i):
-#         raise NotImplementedError()
-
-def test_me():
-    print("inside test_me")
-    print("testme2")
-    print("testme4")
+    def __call__(self, i):
+        out = []
+        out.append(self.n1) 
+        out.append(self.n2)
+        out.append(self.n3)
+        for j in range(2,i+1):
+            out.append(out[j-1] + out[j-2] + out[j-3])
+        return out[j]
+        #raise NotImplementedError()
 
 if __name__ == "__main__":
 
     print("f(100000)[-8:]", last_8(optimized_fibonacci(100000)))
 
-    #new_seq = SummableSequence(5, 7, 11)
-    #print("new_seq(100000)[-8:]:", last_8(new_seq(100000)))
+    new_seq = SummableSequence(5, 7, 11)
+    print("new_seq(100000)[-8:]:", last_8(new_seq(100000)))
