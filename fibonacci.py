@@ -21,7 +21,7 @@ def optimized_fibonacci(f):
     #raise NotImplementedError()
 
 
-cclass SummableSequence(object):
+class SummableSequence(object):
     def __init__(self, *initial):
         self.initial = initial
         #print(self.initial)
