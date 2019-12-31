@@ -29,11 +29,9 @@ class SummableSequence(object):
 
     def __call__(self, i):
         out = []
-        #print(self.initial)
         for each in self.initial:
             #print(each)
             out.append(each)
-            print(out)
         for j in range(2,i+1):
             out.append(out[j-1] + out[j-2] + out[j-3])
         return out[j]
