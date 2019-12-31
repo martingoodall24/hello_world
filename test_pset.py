@@ -71,6 +71,7 @@ class FibTests(TestCase):
        ss = SummableSequence(0, 1)
        for n in range(0, 50, 5):
            with timeout(message="Timeout running f({})".format(n)):
+            self.assertEqual(ss(n), expected)
 #                raise NotImplementedError(
 #                    "You should implement this and other SummableSequence tests!"
 #                )
