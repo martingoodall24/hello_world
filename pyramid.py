@@ -31,8 +31,6 @@ def print_pyramid(rows):
     #return list(output)
     
     #raise NotImplementedError("Called with rows={}".format(rows))
-def another_print():
-    print("aonther"
 
 if __name__ == "__main__":
     parser = ArgumentParser(
