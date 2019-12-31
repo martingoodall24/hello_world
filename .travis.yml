@@ -22,7 +22,9 @@ jobs:
          - ./cc-test-reporter before-build
       #script: pytest
         #- pytest --cov-report xml --cov-report term
-      script: coverage run -m unittest discover
+      script: 
+        - coverage run -m unittest discover
+        - pytest --cov-report html 
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     - stage: answers
