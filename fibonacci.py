@@ -34,7 +34,7 @@ class SummableSequence(object):
             out.append(each)
         for j in range(2,i+1):
             out.append(out[j-1] + out[j-2] + out[j-3])
-        return out[j]
+        return out[i]
         #raise NotImplementedError()
 
 if __name__ == "__main__":
