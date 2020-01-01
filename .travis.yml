@@ -5,7 +5,7 @@ env:
   global:
     - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
     #- CODECLIMATE_REPO_TOKEN=[token]
-    - CC_TEST_REPORTER_ID="c81ce817a4535dcba2152bb4b131eb891a4a988af7cf7820bd5acd37f2df6fe9"
+    - CC_TEST_REPORTER_ID=60520e4f716def8540f37907f024b517609b23e34acf445783cc838948807a5b
 
 language: python
 python:
@@ -29,9 +29,9 @@ jobs:
         #- pytest --cov-report xml --cov-report term
       script: 
         - coverage run -m unittest discover
-        - coverage html ccout
+        - coverage html 
         #- pytest --cov-report html  --cov
-        - pytest --cov --cov-report=html:reports/html_dir --cov-report term
+        - pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     - stage: answers
