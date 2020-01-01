@@ -1,5 +1,10 @@
+
+
+# for codecoverage on codeclimate.com
 env:
   global:
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
+    #- CODECLIMATE_REPO_TOKEN=[token]
     - CC_TEST_REPORTER_ID=c81ce817a4535dcba2152bb4b131eb891a4a988af7cf7820bd5acd37f2df6fe9
 
 language: python
