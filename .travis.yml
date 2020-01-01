@@ -38,3 +38,4 @@ jobs:
       script:
         - python fibonacci.py
         - python pyramid.py
+        
