@@ -13,7 +13,8 @@ def print_pyramid(rows):
     """Print a pyramid of a given height
     :param int rows: total height
     """
-    n = rows
+    # uncomment this!!  n = rows
+    n = rowz
     width = n + (n-1)
     a = "="
     b = "-"
