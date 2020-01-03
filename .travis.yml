@@ -33,6 +33,7 @@ jobs:
         - coverage html 
         #- pytest --cov-report html  --cov
         - pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
+        - codeclimate analyze
       after_script:
         - ./cc-test-reporter after-build --debug #--exit-code $TRAVIS_TEST_RESULT
          
