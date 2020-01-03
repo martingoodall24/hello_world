@@ -8,7 +8,8 @@ def last_8(some_int):
     """
     #last_8_digits = some_int % 100000000
     yyy
-    return last_8_digits
+    #return last_8_digits
+    return abc
     #raise NotImplementedError()
 
     
