@@ -6,7 +6,8 @@ def last_8(some_int):
     :param int some_int: the number
     :rtype: int
     """
-    last_8_digits = some_int % 100000000
+    #last_8_digits = some_int % 100000000
+    zzz
     return last_8_digits
     #raise NotImplementedError()
 
