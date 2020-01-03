@@ -7,7 +7,7 @@ def last_8(some_int):
     :rtype: int
     """
     #last_8_digits = some_int % 100000000
-    yyy
+    uuu
     return last_8_digits
     #raise NotImplementedError()
 
