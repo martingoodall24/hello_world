@@ -11,6 +11,9 @@ def last_8(some_int):
     return last_8_digits
     #raise NotImplementedError()
 
+    
+def remove_me():
+    print("remove_me")  
 
 def optimized_fibonacci(f):
     out = []
