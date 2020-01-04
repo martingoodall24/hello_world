@@ -6,11 +6,11 @@ def last_8(some_int):
     :param int some_int: the number
     :rtype: int
     """
-    #last_8_digits = some_int % 100000000
-    uuu
+    last_8_digits = some_int % 100000000
     return last_8_digits
     #raise NotImplementedError()
 
+    asldkfj elaksjdlkjseskf ekajld
     
 def remove_me():
     print("remove_me")  
