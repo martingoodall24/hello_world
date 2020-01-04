@@ -11,8 +11,6 @@ def last_8(some_int):
     #return last_8_digits
     return abc
     #raise NotImplementedError()
-
-    asldkfj elaksjdlkjseskf ekajld
     
 def remove_me():
     print("remove_me")  
