@@ -19,7 +19,8 @@ jobs:
   include:
     - stage: test
       install:
-        - pipenv install --dev --ignore-pipfile --deploy
+        #- pipenv install --dev --ignore-pipfile --deploy
+        pip install codeclimate-test-reporter
       before_script: # code coverage tool      
          - export GIT_BRANCH="${GITHUB_REF/refs\/heads\//}"
          - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
