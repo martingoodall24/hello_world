@@ -13,8 +13,7 @@ def print_pyramid(rows):
     """Print a pyramid of a given height
     :param int rows: total height
     """
-    # uncomment this!!  n = rows
-    n = rowz
+    n = rows
     width = n + (n-1)
     a = "="
     b = "-"
@@ -27,10 +26,6 @@ def print_pyramid(rows):
         q= z.center(width-i,"=")
         q2 = '{s:{c}^{n}}'.format(s=q,n=width,c=b)
         print(q2)
-        #output.append((q2 + '\n'))
-        #output = (q2 + '\n')
-    #return list(output)
-    
     #raise NotImplementedError("Called with rows={}".format(rows))
 
 if __name__ == "__main__":
