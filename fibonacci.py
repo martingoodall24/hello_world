@@ -13,7 +13,7 @@ def last_8(some_int):
     #raise NotImplementedError()
     
 def remove_me():
-    print("remove_me")  
+    print("remove_me2")
 
 def optimized_fibonacci(f):
     out = []
