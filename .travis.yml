@@ -35,7 +35,7 @@ jobs:
         #- pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
       after_script:
         - ./cc-test-reporter after-build --debug -t coverage.py #--exit-code $TRAVIS_TEST_RESULT
-         
+        - ./cc-test-reporter upload-coverage
     - stage: answers
       script:
         - python fibonacci.py
