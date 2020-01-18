@@ -29,11 +29,11 @@ jobs:
       #script: pytest
         #- pytest --cov-report xml --cov-report term
       script: 
-        - coverage run -m unittest discover
-        - coverage html 
-        - coverage report -m
-        - pytest --cov-report html  --cov
-        #- pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
+        #- coverage run -m unittest discover
+        #- coverage html 
+        #- coverage report -m
+        #- pytest --cov-report html  --cov
+        - pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
       after_script:
         - ./cc-test-reporter after-build --debug  #--exit-code $TRAVIS_TEST_RESULT
         - ./cc-test-reporter upload-coverage
