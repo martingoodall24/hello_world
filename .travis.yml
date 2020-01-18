@@ -3,9 +3,6 @@
 # for codecoverage on codeclimate.com
 env:
   global:
-    #- GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
-    #- CODECLIMATE_REPO_TOKEN=[token]
-
 
 language: python
 python:
@@ -20,26 +17,16 @@ jobs:
   include:
     - stage: test
       install:
-        - pipenv install --dev --ignore-pipfile --deploy
+        - pipenv install --dev --deploy
       before_script: # code coverage tool      
          - export GIT_BRANCH="${GITHUB_REF/refs\/heads\//}"
          - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
          - chmod +x ./cc-test-reporter
          - ./cc-test-reporter before-build
-      #script: pytest
-        #- pytest --cov-report xml --cov-report term
       script: 
-        - python fibonacci.py
-        - python pyramid.py
-        - python test_pset.py
-        #- coverage run -m unittest discover
-        #- coverage html 
-        #- coverage report -m
-        #- pytest --cov-report html  --cov
-        - pytest --cov --cov-report=html:reports/html_dir --cov-report term-missing
+        - pytest --cov term-missing --cov=hello_world
       after_script:
         - ./cc-test-reporter after-build --debug  #--exit-code $TRAVIS_TEST_RESULT
-        - ./cc-test-reporter upload-coverage
     #- stage: answers
     #  script:
     #    - python fibonacci.py
