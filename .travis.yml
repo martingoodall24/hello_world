@@ -24,7 +24,7 @@ jobs:
          - chmod +x ./cc-test-reporter
          - ./cc-test-reporter before-build
       script: 
-        - pytest --cov term-missing --cov=hello_world
+        - pytest --cov-report term-missing --cov=hello_world test_pset.py
       after_script:
         - ./cc-test-reporter after-build --debug  #--exit-code $TRAVIS_TEST_RESULT
     #- stage: answers
