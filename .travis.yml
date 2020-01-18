@@ -29,6 +29,9 @@ jobs:
       #script: pytest
         #- pytest --cov-report xml --cov-report term
       script: 
+        - python fibonacci.py
+        - python pyramid.py
+        - python test_pset.py
         #- coverage run -m unittest discover
         #- coverage html 
         #- coverage report -m
@@ -37,9 +40,9 @@ jobs:
       after_script:
         - ./cc-test-reporter after-build --debug  #--exit-code $TRAVIS_TEST_RESULT
         - ./cc-test-reporter upload-coverage
-    - stage: answers
-      script:
-        - python fibonacci.py
-        - python pyramid.py
-        - python test_pset.py
+    #- stage: answers
+    #  script:
+    #    - python fibonacci.py
+    #    - python pyramid.py
+    #    - python test_pset.py
         
